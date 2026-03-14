@@ -1,0 +1,14 @@
+{
+  "name": "Timecapsule Dev",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "postCreateCommand": "npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "NomicFoundation.hardhat-solidity",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "forwardPorts": [8545, 5500]
+}

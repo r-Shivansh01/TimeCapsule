@@ -1,0 +1,31 @@
+reviews:
+  auto_review:
+    enabled: true
+    drafts: false
+  profile: "chill"
+  high_level_summary: true
+  poem: false
+  path_filters:
+    - "!node_modules/**"
+    - "!artifacts/**"
+    - "!cache/**"
+  path_instructions:
+    - path: "contracts/**"
+      instructions: >
+        This is a beginner's first blockchain project. Review for:
+        reentrancy vulnerabilities, access control correctness,
+        timestamp manipulation risk (document ±15s miner window),
+        NatSpec comment completeness, and gas optimisation opportunities.
+        Explain any issues in plain English suitable for a beginner.
+    - path: "test/**"
+      instructions: >
+        Confirm test coverage includes: happy path, sad path (revert before
+        unlock), exact timestamp boundary, event emission, and access control
+        failure cases.
+    - path: "frontend/**"
+      instructions: >
+        This frontend is vanilla HTML/CSS/JS with no framework.
+        Check wallet connection error handling, correct ethers.js v6 usage,
+        and user input validation.
+chat:
+  auto_reply: true
