@@ -13,12 +13,3 @@ module.exports = {
     apiKey: process.env.ETHERSCAN_API_KEY
   }
 };
-```
-
----
-
-**`.env.example`**
-```
-PRIVATE_KEY=your_wallet_private_key_here
-SEPOLIA_RPC_URL=https://sepolia.infura.io/v3/your_project_id
-ETHERSCAN_API_KEY=your_etherscan_api_key
